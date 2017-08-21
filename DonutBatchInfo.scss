@@ -1,0 +1,170 @@
+﻿@import '../../colors.scss';
+@import '../../layout.scss';
+
+.donutBatchInfoColumn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: $leftColWidth;
+    flex-shrink: 0;
+    box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.donutBatchInfoCard {
+    background-color: white;
+    height: $rowHeight;
+    width: 100%;
+    display: flex;
+}
+
+.subDonutBatchInfoCard {
+    display: flex;
+    height: $subRowHeight;
+    flex-basis: 280px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-right: 1px solid #ECECEC;
+    box-sizing: border-box;
+}
+
+.shelfLifeCol {
+    flex-basis: 63px;
+    flex-shrink: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $darkGreyBackground;
+    color: white;
+}
+
+.shelfLife {
+    font-size: 14px;
+}
+
+.donutType {
+    font-size: 12px;
+}
+
+.donutTypeLink {
+    font-size: 12px;
+    color: white;
+}
+
+.subDonutType {
+    display: flex;
+    flex-basis: 63px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    font-size: 10px;
+    color: $lightGreyText;
+    background-color: $subDonutType;
+}
+
+.donutNameCol {
+    flex-basis: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.donutName {
+    margin-left: 20px;
+    color: $darkGreyText;
+    font-family: Georgia, serif;
+    word-break: break-all;
+}
+
+.donutName:hover {
+    cursor: pointer;
+}
+
+.donutId {
+    margin-left: 20px;
+    margin-top: 3px;
+    color: $lightGreyText;
+    font-size: 12px;
+}
+
+.donutId:hover {
+    cursor: pointer;
+}
+
+.subDonutName {
+    display: flex;
+    flex-basis: 100%;
+    float: left;
+    margin-left: 20px;
+    font-family: Georgia, serif;
+    color: $lightGreyText;
+    font-size: 14px;
+    align-items: center;
+    text-align: left;
+    word-break: break-all;
+}
+
+.flavorSalty {
+    flex-basis: 30px;
+    height: 100%;
+    background-color: $frenchBackgroundColor;
+    display: flex;
+
+    svg {
+        position: relative;
+        margin: auto;
+        right: 50%;
+    }
+}
+
+.subDonutFlavorSalty {
+    display: flex;
+    flex-basis: 30px;
+    flex-shrink: 0;
+    height: 100%;
+    background-color: $frenchBackgroundColor;
+}
+
+.flavorSweet {
+    flex-basis: 30px;
+    height: 100%;
+    background-color: $spanishBackgroundColor;
+    display: flex;
+
+    svg {
+        position: relative;
+        margin: auto;
+        right: 50%;
+    }
+}
+
+.subDonutFlavorSweet {
+    display: flex;
+    flex-basis: 30px;
+    flex-shrink: 0;
+    height: 100%;
+    background-color: $spanishBackgroundColor;
+}
+
+.subDonutStatus {
+    display: flex;
+    flex-basis: 23px;
+    flex-shrink: 0;
+    height: 100%;
+    color: $lightGreyText;
+    font-size: 10px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.donutsAssemblerListShown > .donutRow_Container > .donutBatchInfoColumn {
+    box-shadow: $assemblerIndividualDonutRowShadow;
+}
+
+.donutsAssemblerPreBatchRowShown > .donutRow_Container > .donutBatchInfoColumn {
+    box-shadow: $assemblerBatchDonutRowShadow;
+}
